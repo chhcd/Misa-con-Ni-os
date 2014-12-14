@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta charset="UTF-8"> 
+    <title>Misa con Niños</title>
+<meta name="viewport" content="width=device.width, initial-scale=1.0">
+<link rel="apple-touch-icon" href="http://cideb.uanl.mx/wp-content/uploads/2013/03/cidebuanl.jpg">
+<link rel="apple-touch-icon" sizes="114x114" href="http://cideb.uanl.mx/wp-content/uploads/2013/03/cidebuanl.jpg">
+<link rel="apple-touch-icon" sizes="72x72" href="http://cideb.uanl.mx/wp-content/uploads/2013/03/cidebuanl.jpg">
+<link rel="apple-touch-icon" sizes="144x144" href="http://cideb.uanl.mx/wp-content/uploads/2013/03/cidebuanl.jpg">
+<link rel="shortcut icon" href="img/icon.ico">
+<script src="http://www.parsecdn.com/js/parse-1.3.2.min.js"></script>
+<script type="text/javascript">
+  // Conect with the Parse Database Server and "Misa con Niños" App
+  Parse.initialize("PAUKKflvcW1GrmfBWWAPRGmpfC02b6I6fUXL7WQG", "LNNk930M5qjrOdtb3jmiKhWgzaUqkH8cMY3B4nG5");
+
+  var currentUser = Parse.User.current();
+  if (currentUser) {
+      // show the home page
+      window.location.href = 'inicio.html';
+  } else {
+      // show the welcome page
+      window.location.href = 'bienvenida.html';
+  }
+</script>
+</head>
+<body>
+
+</body>
+</html>
